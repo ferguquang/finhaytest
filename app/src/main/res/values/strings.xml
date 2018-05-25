@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="investContent">Chuyển khoản qua ngân hàng theo thông tin dưới đây để hoàn tất đầu tư. Có thể mất đến 48 giờ để Finhay nhận được tiền"</string>
+    <string name="tiptietkiem">Khi có lương, tiết kiệm ngay một khoản, đừng chờ đến khi gần tiêu hết mới bắt đầu tiết kiệm!</string>
+    <string name="dealSuccess">Tiền đang được</string>
+    <string name="stringMh9">Cấu trúc bảo thủ dành cho các bạn trẻ có xu hướng không thích rủi ro, muốn bảo toàn tài sản của mình, những bù lại lợi nhuận sẽ thấp.</string>
+</resources>

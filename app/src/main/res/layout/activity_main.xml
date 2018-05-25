@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ngo.ducquang.test.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="ClickFinhay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:onClick="ClickMH2"
+            android:text="man hinh 2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:onClick="ClickMH3"
+            android:text="man hinh 3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:onClick="ClickMH4"
+            android:text="man hinh 4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:onClick="ClickMH5"
+            android:text="man hinh 5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:onClick="ClickMH6DeXuat"
+            android:text="man hinh 6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:onClick="ClickMH7"
+            android:text="man hinh 7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+
+        <!--<Button-->
+            <!--android:onClick="ClickMH8"-->
+            <!--android:text="man hinh 8"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--tools:ignore="OnClick" />-->
+
+        <!--<Button-->
+            <!--android:onClick="ClickMH9"-->
+            <!--android:text="man hinh 9"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--tools:ignore="OnClick" />-->
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"
+        android:text="Đánh giá mức độ nhận rủi ro của bạn"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.xw.repo.BubbleSeekBar
+        android:id="@+id/bubbleSeekBar"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        app:bsb_progress="20"
+        app:bsb_second_track_color="@color/colorMain"
+        app:bsb_show_section_mark="true"
+        app:bsb_show_thumb_text="false"
+        app:bsb_thumb_radius_on_dragging="14dp"
+        app:bsb_track_color="@color/workTodo"
+        app:bsb_track_size="0.5dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+        android:text="Đời sống tình cảm của bạn"
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

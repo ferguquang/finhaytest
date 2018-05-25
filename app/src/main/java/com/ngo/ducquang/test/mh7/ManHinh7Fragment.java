@@ -47,6 +47,12 @@ public class ManHinh7Fragment extends Fragment implements View.OnClickListener
         function = view.findViewById(R.id.function);
         scrollView = view.findViewById(R.id.scrollView);
 
+
+        expand = view.findViewById(R.id.expand);
+        collapse = view.findViewById(R.id.collapse);
+        function = view.findViewById(R.id.function);
+        scrollView = view.findViewById(R.id.scrollView);
+
         return view;
     }
 

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ngo.ducquang.test.mh9.ManHinhGrabActivity">
+
+    <LinearLayout
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_above="@+id/rlMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/white"
+            android:text="FIXED FARE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/point"
+            android:textStyle="bold"
+            android:text="25.00"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:text="GRABCAR"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@drawable/back_ground_grab_content"
+        android:id="@+id/rlMain"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/bgLow"
+            android:id="@+id/info"
+            android:weightSum="9"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/numberKM"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="2.0 KM"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/textSize"
+                    android:textStyle="bold"
+                    android:background="@drawable/back_ground_grabpay"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="GRABPAY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/textSize"
+                    android:textStyle="bold"
+                    android:background="@drawable/back_ground_promo"
+                    android:gravity="center"
+                    android:text="PROMO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_below="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:id="@+id/ll1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:text="GRAB HQ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:text="NO1. GRAB ROAD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:background="@color/bgLow"
+                android:layout_below="@+id/ll1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:text="GRAB HQ"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/textSize"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="NO1. GRAB ROAD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:src="@drawable/ic_verified_user_black_24dp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/acceptJob"
+        android:layout_margin="8dp"
+        android:background="@drawable/back_ground_main_button"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:text="ACCEPT JOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:id="@+id/countDown"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/circle"
+            android:text="15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

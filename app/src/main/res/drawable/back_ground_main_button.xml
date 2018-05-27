@@ -20,7 +20,6 @@
         <shape android:shape="rectangle"  >
             <padding android:bottom="5dip" android:left="5dip" android:right="5dip" android:top="5dip"/>
             <corners android:radius="5dip" />
-            <stroke android:width="0.5dip" android:color="@color/workTodo" />
             <solid android:color="@color/colorMain"/>
         </shape>
     </item>

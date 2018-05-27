@@ -77,12 +77,12 @@
             android:layout_height="wrap_content"
             tools:ignore="OnClick" />
 
-        <!--<Button-->
-            <!--android:onClick="ClickMH8"-->
-            <!--android:text="man hinh 8"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--tools:ignore="OnClick" />-->
+        <Button
+            android:onClick="ClickMH8"
+            android:text="man hinh 8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
 
         <!--<Button-->
             <!--android:onClick="ClickMH9"-->

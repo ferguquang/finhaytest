@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:padding="24dp"
+        android:background="@color/colorMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_marginTop="8dp"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:text="Kiến thức"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        x
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_below="@+id/title"
+            android:text="Không ngừng tích lũy kiến thức tài chính cá nhân để đạt được mục tiêu của bạn"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/ic_creative"
+                android:layout_width="64dp"
+                android:layout_height="64dp" />
+
+            <TextView
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="NỘI DUNG ĐANG ĐƯỢC XÂY DỰNG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/content"
+                android:gravity="center"
+                android:text="Rất nhanh thôi, những nội dung này sẽ đư"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

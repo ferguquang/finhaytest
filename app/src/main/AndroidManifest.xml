@@ -34,7 +34,8 @@
         <activity
             android:name=".mh6_FinhayDeXuat.FinhayOfferActivity"
             android:theme="@style/AppThemeCustom" />
-        <activity android:name=".mh7.ManHinh7Activity"></activity>
+        <activity android:name=".mh7.ManHinh7Activity" />
+        <activity android:name=".mh8.ManHinh8Activity"></activity>
     </application>
 
 </manifest>

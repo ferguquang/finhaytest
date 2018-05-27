@@ -12,6 +12,7 @@ import com.ngo.ducquang.test.mh4.CheckInfoActivity;
 import com.ngo.ducquang.test.mh5.DealSuccessActivity;
 import com.ngo.ducquang.test.mh6_FinhayDeXuat.FinhayOfferActivity;
 import com.ngo.ducquang.test.mh7.ManHinh7Activity;
+import com.ngo.ducquang.test.mh8.ManHinh8Activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,5 +48,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void ClickMH7(View view) {
         startActivity(new Intent(this, ManHinh7Activity.class));
+    }
+
+    public void ClickMH8(View view) {
+        startActivity(new Intent(this, ManHinh8Activity.class));
     }
 }

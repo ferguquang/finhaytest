@@ -11,22 +11,34 @@ import java.util.List;
  */
 
 public class TitleModel extends ExpandableGroup<ContentModel> {
-    private String title;
 
     public TitleModel(String title, List<ContentModel> items) {
         super(title, items);
+    }
+
+    public TitleModel(Parcel in, int iconResId) {
+        super(in);
     }
 
     protected TitleModel(Parcel in) {
         super(in);
     }
 
+//    @Override
+//    public boolean equals(Object obj) {
+//        if (this == obj) return true;
+//        if (!(obj instanceof TitleModel)) return false;
+//
+//        TitleModel genre = (TitleModel) obj;
+//        return getTitle() == genre.getTitle();
+//    }
 
-    public String getTitle() {
-        return title;
-    }
 
-    public void setTitle(String title) {
-        this.title = title;
+    @Override
+    public boolean equals(Object obj)
+    {
+        if (this == obj) return true;
+        if (!(obj instanceof TitleModel)) return false;
+        return super.equals(obj);
     }
 }

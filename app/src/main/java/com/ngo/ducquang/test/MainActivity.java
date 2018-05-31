@@ -8,6 +8,10 @@ import android.view.View;
 import com.ngo.ducquang.test.finhay.InvestDetailActivity;
 import com.ngo.ducquang.test.manHinh2.InvestWithdrawalActivity;
 import com.ngo.ducquang.test.manhinh3.InvestHistoryActivity;
+import com.ngo.ducquang.test.mh10_Viewpager.ViewPagerActivity;
+import com.ngo.ducquang.test.mh11.TestInfoActivity;
+import com.ngo.ducquang.test.mh12_page.LoginActivity;
+import com.ngo.ducquang.test.mh12_page.request.RequestActivity;
 import com.ngo.ducquang.test.mh4.CheckInfoActivity;
 import com.ngo.ducquang.test.mh5.DealSuccessActivity;
 import com.ngo.ducquang.test.mh6_FinhayDeXuat.FinhayOfferActivity;
@@ -57,5 +61,17 @@ public class MainActivity extends AppCompatActivity {
 
     public void ClickMH9(View view) {
         startActivity(new Intent(this, ManHinhGrabActivity.class));
+    }
+
+    public void ClickMHViewPager(View view) {
+        startActivity(new Intent(this, ViewPagerActivity.class));
+    }
+
+    public void ClickMH11(View view) {
+        startActivity(new Intent(this, TestInfoActivity.class));
+    }
+
+    public void ClickMH12(View view) {
+        startActivity(new Intent(this, LoginActivity.class));
     }
 }

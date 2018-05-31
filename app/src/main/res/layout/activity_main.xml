@@ -11,6 +11,15 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+        <Button
+            android:visibility="gone"
+            android:onClick="ClickRetrofit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RETROFIT"
+            tools:ignore="OnClick" />
+
         <Button
             android:onClick="ClickFinhay"
             android:layout_width="wrap_content"
@@ -87,6 +96,34 @@
         <Button
             android:onClick="ClickMH9"
             android:text="man hinh 9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:onClick="ClickMHViewPager"
+            android:text="man hinh 10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:onClick="ClickMH11"
+            android:text="man hinh 11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:onClick="ClickMH12"
+            android:text="man hinh 12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:ignore="OnClick" />

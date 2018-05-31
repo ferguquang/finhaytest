@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ngo.ducquang.test">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -36,7 +38,14 @@
             android:theme="@style/AppThemeCustom" />
         <activity android:name=".mh7.ManHinh7Activity" />
         <activity android:name=".mh8.ManHinh8Activity" />
-        <activity android:name=".mh9.ManHinhGrabActivity"></activity>
+        <activity android:name=".mh9.ManHinhGrabActivity" />
+        <activity android:name=".mh10_Viewpager.ViewPagerActivity" />
+        <activity
+            android:name=".mh10_Viewpager.viewpagercard.CardViewPagerActivity"
+            android:theme="@style/AppThemeCustom" />
+        <activity android:name=".mh11.TestInfoActivity" />
+        <activity android:name=".mh12_page.LoginActivity" />
+        <activity android:name=".mh12_page.request.RequestActivity"></activity>
     </application>
 
 </manifest>

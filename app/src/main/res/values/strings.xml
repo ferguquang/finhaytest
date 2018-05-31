@@ -4,4 +4,11 @@
     <string name="tiptietkiem">Khi có lương, tiết kiệm ngay một khoản, đừng chờ đến khi gần tiêu hết mới bắt đầu tiết kiệm!</string>
     <string name="dealSuccess">Tiền đang được</string>
     <string name="stringMh9">Cấu trúc bảo thủ dành cho các bạn trẻ có xu hướng không thích rủi ro, muốn bảo toàn tài sản của mình, những bù lại lợi nhuận sẽ thấp.</string>
+
+    <string name="title_1">Cool card</string>
+    <string name="title_2">Ok card</string>
+    <string name="title_3">Bad card</string>
+    <string name="title_4">Ugly card</string>
+
+    <string name="text_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Etiam eget ligula eu lectus lobortis condimentum.</string>
 </resources>

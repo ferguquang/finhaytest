@@ -1,5 +1,6 @@
 package com.ngo.ducquang.test.mh12_page.request.incomingRequest;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,9 +20,11 @@ import java.util.List;
 
 public class ExpandAdapter extends ExpandableRecyclerViewAdapter<TitleViewHolder, ContentViewHolder>
 {
+    private Context context;
 
-    public ExpandAdapter(List<? extends ExpandableGroup> groups) {
+    public ExpandAdapter(Context context, List<? extends ExpandableGroup> groups) {
         super(groups);
+        this.context = context;
     }
 
     @Override
@@ -40,7 +43,7 @@ public class ExpandAdapter extends ExpandableRecyclerViewAdapter<TitleViewHolder
     @Override
     public void onBindChildViewHolder(ContentViewHolder holder, int flatPosition, ExpandableGroup group, int childIndex) {
         ContentModel contentModel = (ContentModel) group.getItems().get(childIndex);
-        holder.setContentExpand(contentModel.getName());
+        holder.binding(context, contentModel);
     }
 
     @Override

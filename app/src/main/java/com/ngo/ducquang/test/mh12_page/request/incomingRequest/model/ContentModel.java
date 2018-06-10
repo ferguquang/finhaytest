@@ -11,12 +11,22 @@ public class ContentModel implements Parcelable {
     private String name;
     private String content = "", time = "", status = "", manager = "", avatar = "";
 
-    public ContentModel(String name) {
+    public ContentModel(String name, String content, String time, String status, String manager, String avatar) {
         this.name = name;
+        this.content = content;
+        this.time = time;
+        this.status = status;
+        this.manager = manager;
+        this.avatar = avatar;
     }
 
     protected ContentModel(Parcel in) {
         name = in.readString();
+        content = in.readString();
+        time = in.readString();
+        status = in.readString();
+        manager = in.readString();
+        avatar = in.readString();
     }
 
     public static final Creator<ContentModel> CREATOR = new Creator<ContentModel>() {

@@ -1,5 +1,7 @@
 package com.ngo.ducquang.test.base;
 
+import com.ngo.ducquang.test.callAPI.StatusModel;
+
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
@@ -16,10 +18,10 @@ import retrofit2.http.POST;
 
 public interface ApiService
 {
-//    @POST("Projectplan/Index")
-//    @FormUrlEncoded
-//    Call<ProjectPlan> getProject(@Field("Token") String token,
-//                                 @Field("Term") String term);
+    @POST("customer/Index")
+    @FormUrlEncoded
+    Call<StatusModel> getProject(@Field("Token") String token,
+                                 @Field("Term") String term);
 
     class Factory
     {

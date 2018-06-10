@@ -125,10 +125,13 @@ public class ViewPagerActivity extends AppCompatActivity
 
         viewPager.setScrollDurationFactor(2);
 
-        status.setText("Chuyển đổi cấu trúc");
-        status.setTextColor(getResources().getColor(R.color.white));
-        imgStatus.setVisibility(View.GONE);
-        llStatus.setBackgroundDrawable(getResources().getDrawable(R.drawable.back_ground_main_button));
+        status.setText("Đang hoạt động");
+        status.setTextColor(getResources().getColor(R.color.colorMain));
+        DrawableHelper.withContext(getApplicationContext()).withColor(R.color.colorMain).withDrawable(R.drawable.icon_asset_circle).tint().applyTo(imgStatus);
+        imgStatus.setVisibility(View.VISIBLE);
+        llStatus.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_color_main_text_view));
+
+        Manager.setPaddingView(getApplicationContext(), llStatus, 48, 8, 48, 8);
     }
 
 

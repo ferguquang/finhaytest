@@ -1,5 +1,6 @@
 package com.ngo.ducquang.test.mh12_page.request.incomingRequest;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -24,8 +25,8 @@ import java.util.List;
 
 public class IncomingFragment extends Fragment
 {
-
     private RecyclerView recyclerView;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -41,20 +42,23 @@ public class IncomingFragment extends Fragment
         List<TitleModel> list = getTitle();
 
         RecyclerView.ItemAnimator animator = recyclerView.getItemAnimator();
-        if (animator instanceof DefaultItemAnimator) {
-            ((DefaultItemAnimator) animator).setSupportsChangeAnimations(false);
+        if (animator instanceof DefaultItemAnimator)
+        {
+            ((DefaultItemAnimator) animator).setSupportsChangeAnimations(true);
         }
 
-        ExpandAdapter adapter  = new ExpandAdapter(list);
+        ExpandAdapter adapter  = new ExpandAdapter(getContext(), list);
 
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
+        adapter.onGroupExpanded(1, 1);
     }
 
     public List<TitleModel> getTitle()
     {
         return Arrays.asList(getTitle1(),
-                getTitle2());
+                            getTitle2(),
+                            getTitle3());
     }
 
     public TitleModel getTitle1()
@@ -64,12 +68,12 @@ public class IncomingFragment extends Fragment
 
     public List<ContentModel> makeContent()
     {
-        ContentModel model1 = new ContentModel("content 1");
-        ContentModel model2 = new ContentModel("content 2");
-        ContentModel model3 = new ContentModel("content 3");
-        ContentModel model4 = new ContentModel("content 4");
+        ContentModel model1 = new ContentModel("Tham khảo ý kiến trình ký 1", "tham khảo  bộ nội", "19-6-2018", "1", "Trường phòng kế hoạch", "");
+        ContentModel model2 = new ContentModel("Tham khảo ý kiến trình ký 2", "tham khảo  bộ nội", "19-6-2018", "0", "Trường phòng kế hoạch", "");
+//        ContentModel model3 = new ContentModel("Tham khảo ý kiến trình ký 3", "tham khảo  bộ nội", "19-6-2018", "2", "Trường phòng kế hoạch", "");
+//        ContentModel model4 = new ContentModel("Tham khảo ý kiến trình ký 4", "tham khảo  bộ nội", "19-6-2018", "1", "Trường phòng kế hoạch", "");
 
-        return Arrays.asList(model1, model2, model3, model4);
+        return Arrays.asList(model1, model2/*, model3, model4*/);
     }
 
     public TitleModel getTitle2()
@@ -79,10 +83,24 @@ public class IncomingFragment extends Fragment
 
     public List<ContentModel> makeContent2()
     {
-        ContentModel model1 = new ContentModel("content 1");
-        ContentModel model2 = new ContentModel("content 2");
-        ContentModel model3 = new ContentModel("content 3");
-        ContentModel model4 = new ContentModel("content 4");
-        return Arrays.asList(model1, model2, model3, model4);
+        ContentModel model1 = new ContentModel("Tham khảo ý kiến trình ký 21", "tham khảo  bộ nội", "19-6-2018", "1", "Trường phòng kế hoạch", "");
+        ContentModel model2 = new ContentModel("Tham khảo ý kiến trình ký 22", "tham khảo  bộ nội", "19-6-2018", "0", "Trường phòng kế hoạch", "");
+//        ContentModel model3 = new ContentModel("Tham khảo ý kiến trình ký 23", "tham khảo  bộ nội", "19-6-2018", "2", "Trường phòng kế hoạch", "");
+//        ContentModel model4 = new ContentModel("Tham khảo ý kiến trình ký 24", "tham khảo  bộ nội", "19-6-2018", "1", "Trường phòng kế hoạch", "");
+        return Arrays.asList(model1, model2/*, model3, model4*/);
+    }
+
+    public TitleModel getTitle3()
+    {
+        return new TitleModel("Từ chối", makeContent3());
+    }
+
+    public List<ContentModel> makeContent3()
+    {
+        ContentModel model1 = new ContentModel("Tham khảo ý kiến trình ký 31", "tham khảo  bộ nội", "19-6-2018", "1", "Trường phòng kế hoạch", "");
+        ContentModel model2 = new ContentModel("Tham khảo ý kiến trình ký 32", "tham khảo  bộ nội", "19-6-2018", "0", "Trường phòng kế hoạch", "");
+//        ContentModel model3 = new ContentModel("Tham khảo ý kiến trình ký 33", "tham khảo  bộ nội", "19-6-2018", "2", "Trường phòng kế hoạch", "");
+//        ContentModel model4 = new ContentModel("Tham khảo ý kiến trình ký 34", "tham khảo  bộ nội", "19-6-2018", "1", "Trường phòng kế hoạch", "");
+        return Arrays.asList(model1, model2/*, model3, model4*/);
     }
 }

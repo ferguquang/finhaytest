@@ -10,7 +10,8 @@ import java.util.List;
  * Created by ducqu on 5/31/2018.
  */
 
-public class TitleModel extends ExpandableGroup<ContentModel> {
+public class TitleModel extends ExpandableGroup<ContentModel>
+{
 
     public TitleModel(String title, List<ContentModel> items) {
         super(title, items);

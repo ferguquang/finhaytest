@@ -42,4 +42,5 @@
 
     <color name="colorDark">#595959</color>
     <color name="bgLow">#e1e1e1</color>
+    <color name="colorSpotlight">#66000000</color>
 </resources>

@@ -63,6 +63,12 @@
 
         </android.support.v4.view.ViewPager>
 
+        <Button
+            android:onClick="ClickRetrofit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+
     </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>
